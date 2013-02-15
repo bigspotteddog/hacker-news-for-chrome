@@ -1,6 +1,21 @@
 body {
 	overflow: hidden;
+	margin: 0px;
+	background-color: #F6F6EF;
 }
 #container, #spinner {
 	width:350px;
+}
+#header {
+	position: fixed;
+	width: 100%;
+}
+#search {
+	padding-top: 20px;
+}
+#footer {
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	background-color: #F6F6EF;
 }
