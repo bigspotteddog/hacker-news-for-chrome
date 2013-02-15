@@ -1,0 +1,11 @@
+#header span {
+	font-size:14px;
+	font-weight:bold;
+}
+#options {
+	text-decoration:underline;
+	color:#00C; 
+}
+p {
+	margin-top:8px;
+}

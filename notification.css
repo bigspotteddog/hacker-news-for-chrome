@@ -1,0 +1,13 @@
+#StoryLink {
+	font-size:14px;
+}
+#CommentsLink {
+	font-size:12px;
+	color:#828282;
+}
+#header {
+	margin-bottom:8px;
+}
+#header span {
+	font-size:14px; font-weight:bold;
+}

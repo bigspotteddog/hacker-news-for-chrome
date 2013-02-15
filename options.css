@@ -1,0 +1,22 @@
+#header {
+	margin-bottom:20px;
+}
+#container {
+	width:85%;
+	margin:auto;
+}
+label {
+	margin-right:10px;
+}
+.second-radio {
+	margin-left:10px;
+}
+p {
+	color:#828282;
+}
+a {
+	text-decoration:underline;
+}
+#feed {
+	margin-left:10px;
+}

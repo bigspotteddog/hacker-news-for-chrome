@@ -1,0 +1,6 @@
+body {
+	overflow: hidden;
+}
+#container, #spinner {
+	width:350px;
+}
