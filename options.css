@@ -20,3 +20,7 @@ a {
 #feed {
 	margin-left:10px;
 }
+#MaxFeedItems {
+	width: 50px;
+	text-align: right;
+}

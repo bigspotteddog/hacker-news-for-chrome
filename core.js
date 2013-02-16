@@ -1,15 +1,8 @@
 var feedUrl = "http://news.ycombinator.com/rss";
-
-var maxFeedItems = 30;
-
 var req;
-
 var buildPopupAfterResponse = false;
-
 var OnFeedSuccess = null;
-
 var OnFeedFail = null;
-
 var retryMilliseconds = 12e4;
 
 function SetInitialOption(key, value) {
@@ -106,6 +99,10 @@ function parseHNLinks(doc) {
     if (entries.length == 0) {
         entries = doc.getElementsByTagName("item");
     }
+
+    var maxFeedItems = parseInt(localStorage["HN.MaxFeedItems"]);
+    if (!maxFeedItems) maxFeedItems = 15;
+
     var count = Math.min(entries.length, maxFeedItems);
     var links = new Array;
     for (var i = 0; i < count; i++) {

@@ -1,13 +1,13 @@
 var selectReqInterval;
-
 var radioNotifications;
-
 var radioBackgroundTabs;
+var maxFeedItems;
 
 function initVariables() {
     selectReqInterval = document.getElementById("RequestInterval");
     radioNotifications = document.getElementsByName("Notifications");
     radioBackgroundTabs = document.getElementsByName("BackgroundTabs");
+    maxFeedItems = document.getElementById("MaxFeedItems");
 }
 
 function restoreOptions() {
@@ -31,6 +31,10 @@ function restoreOptions() {
             radioBackgroundTabs[i].checked = "true";
         }
     }
+
+    var max = localStorage["HN.MaxFeedItems"];
+    if (!max) max = 15;
+    maxFeedItems.value = max;
 }
 
 function saveOptions() {
@@ -48,6 +52,7 @@ function saveOptions() {
             break;
         }
     }
+    localStorage["HN.MaxFeedItems"] = maxFeedItems.value;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
