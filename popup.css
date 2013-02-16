@@ -1,8 +1,8 @@
 body {
-	overflow: hidden;
 	margin: 0px;
 	background-color: #F6F6EF;
 }
+*:focus {outline:0px none transparent;}
 #container, #spinner {
 	width:350px;
 }
